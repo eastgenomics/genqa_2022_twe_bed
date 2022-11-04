@@ -1,4 +1,7 @@
 # genqa_2022_twe_bed
+Program to create a bed file for a TWE germline NGS submission in the 2022 GenQA.
+
+Running genqa.py generates the output file 'genqa_bed.bed', which describes 44930 genomic intervals.
 
 PART 1
 Create a bed file of clinical transcript exons for all our panel genes

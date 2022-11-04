@@ -10,7 +10,7 @@ bed file for submission to GenQA 2022.
 """
 
 
-import hgnc as hgnc
+import hgnc
 import pandas as pd
 import subprocess
 
@@ -198,7 +198,7 @@ def create_eglh_bed(fp, transcripts, hgnc_df):
     sorted_df = test_df.sort_values(['chrom', 'start'])
     bed_df = sorted_df[['chrom', 'start', 'end']]
 
-    bed_df.to_csv('refs/eglh_bed.bed', sep='\t', header=False, index=False)
+    bed_df.to_csv('eglh_bed.bed', sep='\t', header=False, index=False)
 
 
 def intersect_beds(twe_bed, eglh_bed, fp):
